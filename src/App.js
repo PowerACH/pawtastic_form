@@ -25,7 +25,9 @@ class App extends React.Component {
     return(
       
       <div className = "container">
-        <div className = "left"></div>
+        <div className = "left">
+          <img src="https://www.ronismobilegrooming.com/wp-content/uploads/2015/09/Dog-Row-2-1024x414.png"></img>
+        </div>
         <div className = "right">
           <h1> Pup Basics </h1>
           <h3>Tell us about your pup. </h3>

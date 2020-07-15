@@ -13,27 +13,36 @@ button {
 .container {
   display: flex;
   width: 900px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   margin: auto;
   margin-top: 40px;;
   height: 600px;
+  box-shadow: 10px 10px;
 }
 
 .left {
   flex: 50%;
   width: 50%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 100%;
+  background-color: #FFA8B6;
+}
 
+img {
+  width: 100%;
+  margin-top: 90%;
+  opacity: 50%;
 }
 
 .right {
   flex: 50%;
   width: 50%;
-  border: 2px solid orange;
+  /* border: 2px solid black; */
   padding-top: 60px;
+  background-color: #A28089;
 }
 
 form, h1,h3 {
   text-align: center;
 }
+/* #51E2F5, #9DF9EF, #EDF7F6 */
