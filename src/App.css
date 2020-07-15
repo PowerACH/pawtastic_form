@@ -28,12 +28,16 @@ button {
   background-color: #FFA8B6;
 }
 
-img {
+.puppies {
   width: 100%;
   margin-top: 90%;
   opacity: 50%;
 }
 
+.pawPrint{
+  width: 100%;
+  /* height */
+}
 .right {
   flex: 50%;
   width: 50%;

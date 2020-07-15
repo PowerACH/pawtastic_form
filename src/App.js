@@ -26,11 +26,12 @@ class App extends React.Component {
       
       <div className = "container">
         <div className = "left">
-          <img src="https://www.ronismobilegrooming.com/wp-content/uploads/2015/09/Dog-Row-2-1024x414.png"></img>
+          {/* <img className = "pawPrint" src="https://lh3.googleusercontent.com/proxy/ugBrFmZ5BqpNOiCwdaofVFDNVkc79R5db9COj0Uyj9Rp26TXT58vu4hbJ6tMdKWAaAaW542jMl7hbmDNJ9BAFGHtaRXcLfdP0gcWg-4MPB6VDVNrCgvrSiitNXGRnB6unnrzRDNpRVbvcp96K5Q"></img> */}
+          <img className = "puppies" src="https://www.ronismobilegrooming.com/wp-content/uploads/2015/09/Dog-Row-2-1024x414.png"></img>
         </div>
         <div className = "right">
           <h1> Pup Basics </h1>
-          <h3>Tell us about your pup. </h3>
+          <h3>Tell us about your furry friend. </h3>
           <form className="petBasic">
             <label for="name"> Name: </label>
             <input 
