@@ -1,14 +1,39 @@
-.login-form{
+/* form{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 15px;
 }
-.login-form > input {
-  width: 250px;
-  /* margin: 1em; */
-}
-.login-form > button {
+
+button {
   margin-top: 10px;
   width: 100px;
+} */
+
+.container {
+  display: flex;
+  width: 900px;
+  border: 2px solid blue;
+  margin: auto;
+  margin-top: 40px;;
+  height: 600px;
+}
+
+.left {
+  flex: 50%;
+  width: 50%;
+  border: 2px solid red;
+  height: 100%;
+
+}
+
+.right {
+  flex: 50%;
+  width: 50%;
+  border: 2px solid orange;
+  padding-top: 60px;
+}
+
+form, h1,h3 {
+  text-align: center;
 }
