@@ -30,18 +30,17 @@ button {
 
 .puppies {
   width: 100%;
-  margin-top: 90%;
+  
   opacity: 50%;
 }
 
 .pawPrint{
-  width: 100%;
-  /* height */
+  width: 50%;
+  margin: 96px;
 }
 .right {
   flex: 50%;
   width: 50%;
-  /* border: 2px solid black; */
   padding-top: 60px;
   background-color: #A28089;
 }
@@ -50,3 +49,7 @@ form, h1,h3 {
   text-align: center;
 }
 /* #51E2F5, #9DF9EF, #EDF7F6 */
+
+input {
+  height: 25px;
+}

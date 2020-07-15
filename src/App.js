@@ -26,11 +26,11 @@ class App extends React.Component {
       
       <div className = "container">
         <div className = "left">
-          {/* <img className = "pawPrint" src="https://lh3.googleusercontent.com/proxy/ugBrFmZ5BqpNOiCwdaofVFDNVkc79R5db9COj0Uyj9Rp26TXT58vu4hbJ6tMdKWAaAaW542jMl7hbmDNJ9BAFGHtaRXcLfdP0gcWg-4MPB6VDVNrCgvrSiitNXGRnB6unnrzRDNpRVbvcp96K5Q"></img> */}
-          <img className = "puppies" src="https://www.ronismobilegrooming.com/wp-content/uploads/2015/09/Dog-Row-2-1024x414.png"></img>
+          <img className = "pawPrint" alt = "paw" src="https://www.freelogodesign.org/file/app/client/thumb/51e412a5-bae1-4456-a849-d83e4fa54f14_200x200.png?1594855221596"></img>
+          <img className = "puppies" alt = "dogs" src="https://www.ronismobilegrooming.com/wp-content/uploads/2015/09/Dog-Row-2-1024x414.png"></img>
         </div>
         <div className = "right">
-          <h1> Pup Basics </h1>
+          <h1> PUP DETAILS </h1>
           <h3>Tell us about your furry friend. </h3>
           <form className="petBasic">
             <label for="name"> Name: </label>
@@ -57,7 +57,7 @@ class App extends React.Component {
 
             <br /><br />
 
-            <label> Birthday</label>
+            <label> Birthday: </label>
             <input
               type="date"
               value={this.state.birthday}
