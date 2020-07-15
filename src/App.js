@@ -7,7 +7,7 @@ class App extends React.Component {
     super();
     this.state = {
       petName: '',
-      photo: '',
+      photo: null,
       breed: '',
       birthday: '',
       gender: '',
@@ -73,7 +73,7 @@ class App extends React.Component {
                 id="no"
                 name="spayed"
                 value={this.state.spayedOrNeutered}></input>
-          </form>
+          {/* </form> */}
           {/* <form onSubmit={this.handleSubmit}> */}
           <label>
             Weight: 
