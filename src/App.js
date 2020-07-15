@@ -12,7 +12,7 @@ class App extends React.Component {
       birthday: '',
       gender: '',
       spayedOrNeutered: '',
-      height: ''
+      weight: ''
     }
   }
   // emailChange() {
@@ -24,7 +24,8 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        <h1> Yay, we love dogs! Give us the basics about your pup. </h1>
+        <h1> Pup Basics </h1>
+        <h3>Tell us about your pup. </h3>
         <form className="petBasic">
           <label> Name: </label>
           <input 
@@ -43,43 +44,50 @@ class App extends React.Component {
             type="date"
             value={this.state.birthday}
           />
-          <form>
+          {/* <form> */}
             <label>Gender: </label>
             <label for="female">Female</label>
               <input
-                type="radio" 
+                type="radio"
+                name="gender" 
                 id="female"
                 value={this.state.gender}></input>
                 <label for="male">Male</label>
               <input
-                type="radio" 
+                type="radio"
+                name="gender" 
                 id="male"
                 value={this.state.gender}></input>
-          </form>
-          <form>
+          {/* </form> */}
+          {/* <form> */}
           <label>Spayed or Neutered? : </label>
-            <label for="spayed">Spayed</label>
+            <label for="yes">Yes </label>
               <input
                 type="radio" 
-                id="spayed"
+                id="yes"
+                name="spayed"
                 value={this.state.spayedOrNeutered}></input>
-                <label for="neutered">Neutered</label>
+                <label for="no">No </label>
               <input
                 type="radio" 
-                id="neutered"
+                id="no"
+                name="spayed"
                 value={this.state.spayedOrNeutered}></input>
           </form>
-            <form> //onSubmit="/action_page.php"//>
-                <label for="weight">Weight: </label>
-                <select id="weight" name="">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
-              </form>
-          <button
-            type="submit"
-          >
+          {/* <form onSubmit={this.handleSubmit}> */}
+          <label>
+            Weight: 
+            <select value={this.state.height} onChange={this.handleChange}>
+              <option value="xsmall">X-Small (under 10lbs)</option>
+              <option value="small">Small (10 - 25lbs)</option>
+              <option value="medium">Medium (20 - 50lbs)</option>
+              <option value="large">Large (50 - 75lbs)</option>
+              <option value="xlarge">XLarge (75 - 90lbs)</option>
+              <option value="xxlarge">XXLarge (90+ lbs)</option>
+            </select>
+          </label>
+          {/* </form> */}
+          <button type="submit">
             Submit
           </button>
         </form>
